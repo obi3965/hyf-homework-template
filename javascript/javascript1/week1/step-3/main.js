@@ -47,18 +47,7 @@ document.addEventListener('DOMContentLoaded', (event)=>{
           data.forEach(elementStyle => elementCard(elementStyle));
 
 
-            //number
-        //  let num1 = 4;
-        //  let num2 = 4;
-
-        //  let total = num1 + num2;
-
-        //  console.log(`${total}` + " type:" + typeof(total))
-
-
-
-        //boolean
-        //it return true and false
+        
 
 
         
@@ -73,7 +62,7 @@ document.addEventListener('DOMContentLoaded', (event)=>{
         console.log(`your future Age will be ${AgeResult}`)
 
 
-
+       //Age-ify (A future age calculator)
        //we should create two variables including dateOfBirth and yourFutreAge
         //Second Example to print out in on page with hard code
         let YourDateOfBirth = 1987;
@@ -86,6 +75,9 @@ document.addEventListener('DOMContentLoaded', (event)=>{
         document.getElementById('ageOutput').innerHTML += AgeOutput;
 
 
+
+
+       //Goodboy-Oldboy (A dog age calculator) 
       // lets create three variable to find the dog future age
       let DogYearOfBirth = 2017
       let DogYearFuture = 2027
