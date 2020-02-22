@@ -7,12 +7,12 @@ let matchList = document.querySelector('#match-list')
 
 //SEARCH AUTOCOMPLET.JSON AND FILTER IT
 let searchStates = async searchText =>{
-    let res = await fetch('./autocomplet.json')
-    let states = await resizeBy.json();
+    let res = await fetch('././autocomplet.json')
+    let states = await res.json();
 
     //GET MATCH TO CURRENT TEXT INPUT
     let matches = states.filter(state =>{
-        let regex = new RexExp(`^${searchText}`, 'gi');
+        let regex = new RegExp(`^${searchText}`, 'gi');
         return state.name.match(regex) || state.abbr.match(regex);
     })
 
@@ -22,7 +22,7 @@ let searchStates = async searchText =>{
 
     outputHtml(matches);
 
-    // console.log(states)
+    console.log(states)
 }
 
 let outputHtml = matches =>{
@@ -31,9 +31,12 @@ let outputHtml = matches =>{
         
          <div class="card card-body mb-1">
            <h4>${match.name}(${match.abbr}) <span class="text-primary">${match.capital}</span></h4>
+           <small>lat: ${match.lat} / long: ${match.long}</small>
          </div>
         `
-        )
+        ).join('')
+        // console.log(html)
+        matchList.innerHTML = html;
     }
 }
 //WE CAN LISTEN FOR THE INPUT BECAUSE IT CAN BE ANY INPUTES.WE CAN ALSO USE THE KEYuP
