@@ -1,0 +1,104 @@
+body {
+    padding: 0px;
+    margin:0px;
+  }
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Nunito' sans-serif;
+  }
+  header{
+      background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), 
+      url('https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 30vh;
+      width: 100%;
+  }
+  .overlay{
+      position:absolute ;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      height: 100%;
+      right: 0;
+      bottom: 0;
+      padding: 0;
+      margin: 0;
+      
+  }
+  nav{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 50px 60px 0px 60px;
+  }
+  nav li{
+      list-style: none;
+      display: inline-block;
+      padding-right: 10px;
+      padding-left: 10px;
+
+  }
+  nav li span{
+      padding-left: 5px;
+  }
+
+  li a{
+      padding: 5px;
+      background:#fff;
+      text-decoration: none;
+  }
+  .cart i{
+      vertical-align: bottom;
+      font-size: 20px;
+      padding-right: 5px;
+  }
+  .cart a{
+      background-color: blueviolet;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+  }
+
+  .container{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      padding-bottom: 100px;
+  }
+  .image{
+      /* margin-right: 20px;
+      margin-left: 20px; */
+      position: relative;
+      overflow: hidden;
+      margin: 13px;
+  }
+  .add-cart{
+      position: absolute;
+      width: 100%;
+      background-color: darkgray;
+      transition: all ease-in-out 0.3s ;
+      opacity: 0;
+      cursor: pointer;
+      text-align: center !important;
+     
+  }
+
+  .image:hover .cart1,
+  .image:hover .cart2,
+  .image:hover .cart3,
+  .image:hover .cart4{
+      bottom: 50px;
+      opacity: 1;
+      padding: 10px;
+      text-decoration: none;
+  }
