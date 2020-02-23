@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIPHY API FOR THE USRES</title>
+</head>
+<body>
+    
+     <h1>Searching for a single Giphy image</h1>
+     <br>
+
+     <form>
+         <label for="search">Search</label>
+         <input type="search" id="search">
+         <button type="submit" id="btnSearch">Søg</button>
+     </form>
+
+    <hr>
+
+   <!--OUTPUT FOR A SINGLE GIPHY IMAGE-->
+    <div class="out"></div>
+    <br>
+    <br>
+
+
+    <!--searching for many giphy images -->
+
+      <div class="container">
+          <header>
+              <form id="search-many">
+                  <input type="text" placeholder="SEARCH YOUR GIPHY" id="search-input">
+                  <button type="submit">Search</button>
+              </form>
+          </header>
+           
+          <!--the outputs for many giphy images-->
+          <div id="results" class="results"></div>
+      </div>
+    <script src="./giphy.js"></script>
+    
+</body>
+</html>
