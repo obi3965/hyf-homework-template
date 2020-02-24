@@ -3,63 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shopping cart</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>shopping carts</title>
     <link rel="stylesheet" href="./shopping.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
-    
- <header>
-     <div class="overlay"></div>
-     <nav>
-         <h2>shop</h2>
-         <ul>
-             <li><a href="shopping.html">home</a></li>
-             <li><a href="#">about</a></li>
-             <li class="cart" >
-                 <a href="shopping-cart.html">
-                    <i class="fas fa-shopping-cart"></i>
-                    cart<span>0</span>
-             </a>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">well + shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fas fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-         </ul>
-     </nav>
- </header>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            
+          </ul>
+          <div class="cart-btn ml-auto">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+      </nav>
+    
 
 
- <div class="container">
-     <div class="image">
-         <img src="https://img01.ztat.net/article/LI/Q2/2D/01/5B/11/LIQ22D015-B11@4.jpg?imwidth=300" alt="">
-         <h3>gray tshirt</h3>
-         <h3>$15,00</h3>
-         <a href="#" class="add-cart cart1">add cart</a>
-         <input type="hidden" value="15" />
-     </div>
+    <section class="products">
+   <div class="section-title">
+       <h2>OUR PRODUCTS</h2>
+   </div>
+   <div class="products-center">
+   </div>
+    </section>
 
-     <div class="image">
-        <img src="https://img01.ztat.net/article/VW/62/2E/00/BK/11/VW622E00B-K11@7.jpg?imwidth=300" alt="">
-        <h3>gray tshirt</h3>
-        <h3>$15,00</h3>
-        <a href="#" class="add-cart cart2">add cart</a>
-        <input type="hidden" value="15" />
+
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>your cart</h2>
+            <div class="cart-content">
+                <!--cart item-->
+                 <div class="cart-items">
+                   
+                    </div><!--end of cart item-->   
+            </div>
+
+            <div class="cart-footer">
+                <h3>your total : $ <span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">clear cart</button>
+            </div>
+        </div>
     </div>
-
-    <div class="image">
-        <img src="https://img01.ztat.net/article/HK/02/2O/00/3A/11/HK022O003-A11@4.jpg?imwidth=300" alt="">
-        <h3>gray tshirt</h3>
-        <h3>$15,00</h3>
-        <a href="#" class="add-cart cart3">add cart</a>
-        <input type="hidden" value="15" />
-    </div>
-
-    <div class="image">
-        <img src="https://img01.ztat.net/article/JL/12/2D/05/OM/11/JL122D05O-M11@8.jpg?imwidth=300" alt="">
-        <h3>gray tshirt</h3>
-        <h3>$15,00</h3>
-        <a href="#" class="add-cart cart4">add cart</a>
-        <input type="hidden" value="15" />
-    </div>
- </div>
 <script src="./shopping.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/1d536cb806.js"></script>
 </body>
 </html>
